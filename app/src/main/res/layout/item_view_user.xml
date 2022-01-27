@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_10dp"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:layout_marginEnd="@dimen/dimen_10dp">
+
+    <TextView
+        android:id="@+id/tvUserNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        style="@style/TextView.color_000000.font_14sp"
+        android:gravity="start"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvUserNameLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvUserNameLabel" />
+
+    <TextView
+        android:id="@+id/tvUserIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserNameLabel" />
+
+    <TextView
+        android:id="@+id/tvUserId"
+        style="@style/TextView.color_000000.font_14sp"
+        android:gravity="start"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvUserIdLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvUserIdLabel" />
+
+    <TextView
+        android:id="@+id/tvUserScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserIdLabel" />
+
+    <TextView
+        android:id="@+id/tvUserScore"
+        style="@style/TextView.color_000000.font_14sp"
+        android:gravity="start"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvUserScoreLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvUserScoreLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
